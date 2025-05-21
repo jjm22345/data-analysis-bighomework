@@ -511,14 +511,14 @@ def main():
     path = '2.xlsx'
     qte = steam_ana(path)
     qte.lose_solve()  # 处理缺失值
-    #qte.draw_datas()  # 绘制各类数据图表
-    #qte.ana_goods_rate(phrase="好评如潮")  # 分析好评率挡位占比
-    #qte.univariate_year_analysis()  # 发行年份的单变量分析
-    #qte.univariate_rating_analysis()  # 好评率的单变量分析
+    qte.draw_datas()  # 绘制各类数据图表
+    qte.ana_goods_rate(phrase="好评如潮")  # 分析好评率挡位占比
+    qte.univariate_year_analysis()  # 发行年份的单变量分析
+    qte.univariate_rating_analysis()  # 好评率的单变量分析
     qte.price_and_goods()  # 分析价格与好评率的关系
-    #qte.analyze_tag_rating()  # 游戏标签与好评率关系分析
-    #qte.predict_future_game_price()  # 预测未来游戏价格
-    #qte.predict_future_game_rating() #预测未来游戏价格
+    qte.analyze_tag_rating()  # 游戏标签与好评率关系分析
+    qte.predict_future_game_price()  # 预测未来游戏价格
+    qte.predict_future_game_rating() #预测未来游戏价格
     return 0
 
 if __name__ == "__main__":
